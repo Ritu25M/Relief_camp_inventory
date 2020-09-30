@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Login | Flask</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 40px">
+            <div class="col-sm-6">
+                <form method="POST">
+                    <li id="cid_70" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_70" class="form-header" data-component="header">
+              General survivor Information
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_71">
+        <label class="form-label form-label-left form-label-auto" id="label_71" for="input_71">
+          Gender
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_71" class="form-input jf-required" data-layout="half">
+          <select class="form-dropdown validate[required]" id="input_71" name="q71_gender" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_71">
+            <option value=""> Please Select </option>
+            <option value="Male"> Male </option>
+            <option value="Female"> Female </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_95">
+        <label class="form-label form-label-left form-label-auto" id="label_95" for="input_95">
+          Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_95" class="form-input jf-required" data-layout="half">
+          <input type="text" id="input_95" name="q95_name" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_95" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_91">
+        <label class="form-label form-label-left form-label-auto" id="label_91" for="input_91">
+          Ticket number
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_91" class="form-input jf-required" data-layout="half">
+          <input type="text" id="input_91" name="q91_aadharNumber" data-type="input-number" class="form-textbox validate[required]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_91" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_number" id="id_93">
+        <label class="form-label form-label-left form-label-auto" id="label_93" for="input_93">
+          Age
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_93" class="form-input jf-required" data-layout="half">
+          <input type="number" id="input_93" name="q93_age" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="ex: 23" data-component="number" aria-labelledby="label_93" required="" step="any" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_96">
+        <label class="form-label form-label-left form-label-auto" id="label_96" for="lite_mode_96">
+          Date of entry
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_96" class="form-input jf-required" data-layout="half">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_96" name="q96_dateOf[day]" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_96 sublabel_96_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_96" id="sublabel_96_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_96" name="q96_dateOf[month]" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_96 sublabel_96_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_96" id="sublabel_96_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_96" name="q96_dateOf[year]" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_96 sublabel_96_year" />
+                <label class="form-sub-label" for="year_96" id="sublabel_96_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_96" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="ddmmyyyy" data-seperator="-" placeholder="DD-MM-YYYY" autoComplete="off" aria-labelledby="label_96 sublabel_96_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_96_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+              <label class="form-sub-label" for="lite_mode_96" id="sublabel_96_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_81">
+        <label class="form-label form-label-left form-label-auto" id="label_81" for="input_81">
+          Is sanitary needed?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_81" class="form-input jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_81" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_81_0" name="q81_isSanitary" value="Yes" required="" />
+              <label id="label_input_81_0" for="input_81_0"> Yes </label>
+            </span>
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_81_1" name="q81_isSanitary" value="No" required="" />
+              <label id="label_input_81_1" for="input_81_1"> No </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_76">
+        <label class="form-label form-label-left form-label-auto" id="label_76" for="input_76">
+          Are corona symptoms present?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_76" class="form-input jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_76" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_76_0" name="q76_areCorona" value="Yes" required="" />
+              <label id="label_input_76_0" for="input_76_0"> Yes </label>
+            </span>
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_76_1" name="q76_areCorona" value="No" required="" />
+              <label id="label_input_76_1" for="input_76_1"> No </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_97">
+        <label class="form-label form-label-left form-label-auto" id="label_97" for="input_97">
+          Medical requirements
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_97" class="form-input jf-required" data-layout="half">
+          <select class="form-dropdown validate[required]" id="input_97" name="q97_medicalRequirements" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_97">
+            <option value=""> Please Select </option>
+            <option value="Pregnancy kit"> Pregnancy kit </option>
+            <option value="baby kit"> baby kit </option>
+            <option value="isolation"> isolation </option>
+            <option value="none"> none </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_17">
+        <label class="form-label form-label-left form-label-auto" id="label_17" for="input_17"> Include other comments </label>
+        <div id="cid_17" class="form-input" data-layout="full">
+          <textarea id="input_17" class="form-textarea" name="q17_includeOther17" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_17"></textarea>
+        </div>
+      </li>
+                    <button type="submit" class="btn form-control btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
