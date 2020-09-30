@@ -24,4 +24,4 @@ $ flask run
 
 ## For accessing survivors data
 
-**  Password mentioned in presentation
+```Password mentioned in presentation
